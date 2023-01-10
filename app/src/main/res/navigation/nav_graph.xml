@@ -29,15 +29,52 @@
         android:id="@+id/logInLegally"
         android:name="com.example.underground.Fragments.LogInLegally"
         android:label="LogInLegally"
-        tools:layout="@layout/legal"/>
+        tools:layout="@layout/legal">
+        <action
+            android:id="@id/button"
+            app:destination="@id/home2"/>
+    </fragment>
     <fragment
         android:id="@+id/logInillegally"
         android:name="com.example.underground.Fragments.LogInillegally"
         android:label="LogInillegally"
-        tools:layout="@layout/illegal"/>
+        tools:layout="@layout/illegal">
+        <action
+            android:id="@id/button"
+            app:destination="@id/home2"/>
+    </fragment>
     <fragment
         android:id="@+id/signin"
         android:name="com.example.underground.Fragments.signin"
         android:label="signin"
-        tools:layout="@layout/signinn"/>
+        tools:layout="@layout/signinn">
+        <action
+            android:id="@id/button"
+            app:destination="@id/forgotUwU"/>
+        <action
+            android:id="@id/button2"
+            app:destination="@id/legalorgans"/>
+        <action
+            android:id="@id/button3"
+            app:destination="@id/illegalorgans"/>
+    </fragment>
+    <fragment
+        android:id="@+id/forgotUwU"
+        android:name="com.example.underground.Fragments.forgotUwU"
+        android:label="forgotUwU"
+        tools:layout="@layout/forgot_password">
+        <action
+            android:id="@id/button"
+            app:destination="@id/home2"/>
+    </fragment>
+    <fragment
+        android:id="@+id/illegalorgans"
+        android:name="com.example.underground.Fragments.illegalorgans"
+        android:label="illegalorgans"
+        tools:layout="@layout/illorgans"/>
+    <fragment
+        android:id="@+id/legalorgans"
+        android:name="com.example.underground.Fragments.legalorgans"
+        android:label="legalorgans"
+        tools:layout="@layout/lorgans"/>
 </navigation>
